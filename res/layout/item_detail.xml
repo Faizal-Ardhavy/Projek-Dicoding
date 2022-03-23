@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="6dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_photo2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/spotify"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spotify"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name2"
+
+            style="@style/Text.DetailTitle"
+            tools:text="@string/singer_name" />
+
+        <TextView
+            android:id="@+id/tv_judulLagu2"
+
+            style="@style/Text.DetailTitle.Content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="@string/judul" />
+
+            <TextView
+                style="@style/Text.DetailAttribute"
+                android:text="@string/tahunRilis" />
+
+            <TextView
+                android:id="@+id/tv_tahunRilis"
+
+                style="@style/Text.DetailAttribute.Sub"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/tahun_rilis"/>
+
+        <TextView
+            style="@style/Text.DetailAttribute"
+            android:text="@string/lirik_lagu" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Lirik"
+
+                style="@style/Text.DetailAttribute.Sub"
+                android:lineSpacingMultiplier="1"
+                android:ellipsize="end"
+                tools:text="Lirik" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

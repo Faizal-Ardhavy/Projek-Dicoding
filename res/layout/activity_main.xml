@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/HeaderTitle"
+            android:padding="18dp"
+            android:text="@string/song_list" />
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+
+            style="@style/imgBtnGeneral"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/aboutprofile" />
+
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_singer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_row_singer" />
+</LinearLayout>

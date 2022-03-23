@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project Dicoding</string>
+    <string name="judul">Judul Lagu</string>
+    <string name="nama">Nama</string>
+    <string name="lirik">Lirik lagu</string>
+    <string name="tahunRilis">Tahun Rilis</string>
+    <string name="lirik_lagu">Lirik</string>
+    <string name="name">Muhammad Faizal Ardhavy Heru</string>
+    <string name="email">faizalheru01@gmail.com</string>
+    <string name="song_list">Lagu</string>
+    <string name="tahun_rilis">Tahun rilis</string>
+    <string name="singer_name">Nama Penyanyi</string>
+</resources>
